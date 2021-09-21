@@ -21,7 +21,7 @@ body {
 header {
     padding: 20px;
     background-color: silver;
-    width:100%;
+    width:auto;
     margin: auto auto;
     font-size: 36px;
     display: flex;
@@ -48,6 +48,21 @@ a {
     margin: 15px;
 }
 
+.hero-image {
+    background-position:center
+    height: 200px;
+    padding: 20px;
+    background-image: url("/assets/images/Untitled-design.png");
+}
+
+.overlay-text {
+    z-index: index 1;
+    font-size: 130%;
+    color: white;
+    display: inline-block;
+    margin-left: 63vw;
+}
+
 .container{
     display:flex;
     flex-direction:column;
@@ -56,10 +71,11 @@ a {
 .layer {
     display:flex;
     flex-wrap: wrap;
+    margin-bottom: 2%;
 }
 
 .sidebar {
-    max-width:20%;
+    max-width:30%;
     flex: 1 1 30%;
 }
 
@@ -69,12 +85,14 @@ a {
 
 #paragraph {
     justify-content:left;
-    max-width: 70%
+    max-width: 67%;
+    padding-right: 3%;
 }
+
 .sidetag {
     text-align:right;
     font-size: 150%;
-    padding-right: 15%
+    padding-right: 15%;
 }
 
 .picture-grid {
@@ -88,15 +106,18 @@ a {
 }
 
 .image {
-    height: 20vh;
+    height: 30vh;
     width: 30vw;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    opacity:80%;
 }
 
 .big-picture {
     height: auto;
-    width: 65.75vw;
+    width: 64.7vw;
+    opacity:80%;
 }
+
 .overlay {
     position:absolute;
     margin-top: -8%;
@@ -121,12 +142,26 @@ a {
 .bottom {
     justify-content: space-evenly;
     display:inline-block;
+    text-decoration:none;
+    color: var(--text);
+    margin: 0px 3%
 }
 img {
     border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-  }
+}
   
 img:hover {
      box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+.image:hover{
+    opacity:100%;
+}
+.big-picture:hover{
+    opacity:100%;
+}
+
+.bottom:hover {
+    text-decoration:underline;
+    font-size:110%;
 }

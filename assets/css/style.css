@@ -1,3 +1,4 @@
+/* Define Universal Variables */
 :root {
     --background: #D7FFFA;
     --Text-background: #E2FFF5;
@@ -6,11 +7,13 @@
     --textstyle: underline;
 }
 
+/* Set website color */
 * {
     box-sizing:border-box
     color var(--text);
 }
 
+/* Set reference text styling */
 body {
     font-family: sans-serif;
     font-size: 20px;
@@ -18,75 +21,90 @@ body {
     line-height: 1.5;
 }
 
+/* Set header styling and alignment */
 header {
     padding: 20px;
     background-color: silver;
-    width:auto;
-    margin: auto auto;
+    width: auto;
+    margin: auto;
     font-size: 36px;
     display: flex;
-    justify-content:space-around;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+/* Avatar/Selfie attributes */
+.selfie {
+    height:10vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+/* Header attributes */
 h1 {
     color: var(--text);
     font-size: 120%;
+    margin-right: 25%
 }
 
+/* Navigation bar styling */
 nav {
-    display: flex;
-    flex-direction:row;
+    margin-right:8%;
     list-style-type: none;
-    font-size: 24px;
     color: var(--text);
 }
 
+/* Edit a profiles for proper spacing */
 a {
     text-decoration: none;
     color: var(--text);
     margin: 15px;
 }
 
+/* Insert silver bar under header */
 .hero-image {
     background-position:center
     height: 200px;
     padding: 20px;
     background-image: url("/assets/images/Untitled-design.png");
+    margin-bottom: 2%
 }
 
+/* Position of overlay on .hero-image */
 .overlay-text {
     z-index: index 1;
     font-size: 130%;
     color: white;
     display: inline-block;
-    margin-left: 63vw;
+    margin-left: 74vw;
 }
 
+/* Set flex properties on website beginnign about me */
 .container{
     display:flex;
     flex-direction:column;
 }
 
+/* Enabled two column view */
 .layer {
     display:flex;
     flex-wrap: wrap;
     margin-bottom: 2%;
 }
 
-.sidebar {
-    max-width:30%;
-    flex: 1 1 30%;
-}
-
+/* Set content properties */
 .content {
-    flex: 1 1 70%;
-}
+    flex: 1 1 80%;
+    margin-left: 2%;
+} 
 
-#paragraph {
-    justify-content:left;
-    max-width: 67%;
-    padding-right: 3%;
+/* Set side bar border and properties */
+.sidebar {
+    max-width:15%;
+    flex: 1 1 15%;
+    border-right: solid;
+    border-color: var(--text);
+    border-width: 5px
 }
 
 .sidetag {
@@ -95,29 +113,52 @@ a {
     padding-right: 15%;
 }
 
+/* Styled About me paragraph */
+#paragraph {
+    justify-content:left;
+    max-width: 74%;
+}
+
+/* Set up picture grid in Work section */
 .picture-grid {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 85%;
 }
 
 .picture-grid > * {
     flex:1 1 6em;
 }
 
-.image {
-    height: 30vh;
-    width: 30vw;
-    justify-content: space-between;
-    opacity:80%;
-}
-
+/* Create opacity filter and image sizing on picture grid */
 .big-picture {
     height: auto;
-    width: 64.7vw;
+    width: 74vw;
     opacity:80%;
 }
 
+.image {
+    height: 30vh;
+    width: 33vw;
+    justify-content: space-evenly;
+    opacity:80%;
+}
+
+img {
+    border-radius: 8px;
+}
+
+/* Add hovering effects to the image */
+.image:hover{
+    opacity:100%;
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+.big-picture:hover{
+    opacity:100%;
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+/* Positioning of the text and subtext over images */
 .overlay {
     position:absolute;
     margin-top: -8%;
@@ -132,35 +173,23 @@ a {
 
 .subtext {
     position: absolute;
-    margin-top: -2.8%;
+    margin-top: -6%;
     color: var(--text);
     font-style:italic;
     font-size: 65%;
     padding-left:.5%
 }
 
+/* Alignment and styling of contact me section  */
 .bottom {
     justify-content: space-evenly;
     display:inline-block;
     text-decoration:none;
     color: var(--text);
-    margin: 0px 3%
-}
-img {
-    border-radius: 8px;
-}
-  
-img:hover {
-     box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    margin: 0px 3%;
 }
 
-.image:hover{
-    opacity:100%;
-}
-.big-picture:hover{
-    opacity:100%;
-}
-
+/* Added hover effect to contact me section */
 .bottom:hover {
     text-decoration:underline;
     font-size:110%;

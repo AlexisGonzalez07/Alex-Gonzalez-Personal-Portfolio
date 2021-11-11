@@ -1,0 +1,20 @@
+/* .overlay {
+    position:absolute;
+    margin-top: -8%;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: navy;
+    background-color: VAR(--Text-background);
+    opacity: 85%;
+    padding: .5% 1.5% .8% .5%;
+    color: var(--text);
+}
+
+.subtext {
+    position: absolute;
+    margin-top: -6%;
+    color: var(--text);
+    font-style:italic;
+    font-size: 65%;
+    padding-left:.5%
+} */

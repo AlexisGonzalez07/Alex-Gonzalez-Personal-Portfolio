@@ -1,4 +1,4 @@
-# Homework-2-AG
+# Alex Gonzalez Personal Portfolio
 
 ## Project Purpose
 

@@ -6,7 +6,7 @@ In this project, I was tasked with developing a personal porfolio from scratch u
 
 ## Website Link
 Visit my website on GitHub Pages! Interact with the Navigation Bar as you please. Feel free to hover over the images and explore the flex properties on the website.
-https://alexisgonzalez07.github.io/Homework-2-AG/
+https://alexisgonzalez07.github.io/Alex-Gonzalez-Personal-Portfolio/
 
 ## Tasks Completed
 
